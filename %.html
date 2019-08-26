@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{font-size:30px;}
+			#outer-box{
+				/* 父元素行高为45px */
+				line-height:1.5;
+				background-color:red;
+				color:white;
+			}
+			#inner-box{
+				/* 子元素行高为45px(继承父元素的行高) */
+				font-size:20px;
+				background-color:purple;
+				color:white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="outer-box">这是父元素
+			<div id="inner-box">这是子元素</div>
+		</div>
+	</body>
+</html>
