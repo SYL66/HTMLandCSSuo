@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#content,#sidebar{
+				float:left;
+				color:white;
+			}
+			#content{
+				width:100%;
+				margin-right:-300px;
+				background-color:red;
+			}
+			#sidebar{
+				width:300px;
+				text-align:center;
+				background-color:purple;
+			}
+			/*防止浏览器可视区域宽度不足时发生文本重叠*/
+			#content p{
+				padding-left:10px;
+				margin-right:310px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<p>这是主体部分，自适应宽度</p>
+		</div>
+		<div id="sidebar">
+			<p>这是侧边栏部分，固定宽度</p>
+		</div>
+	</body>
+</html>
